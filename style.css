@@ -10,17 +10,19 @@ body {
 }
 
 .main {
-    height: 95vh;
+    height: 88vh;
     background: linear-gradient(to bottom, #F5821F 0%,#F5821F 45%,#000000 40%,white 40%,white 100%);
     /* background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%); */
     padding: 10;
     width: 30%;
-    margin-left: 33%;
+    margin-left: 65%;
     margin-top: 1%;
     border-style: inset;
     border-radius: 20px;
     border-color: lightgray;
     box-shadow: 10px 10px 5px grey;
+    /* display: none; */
+    visibility: hidden;
 }
 
 h2 {
@@ -39,7 +41,7 @@ h2 {
     margin-top: 60px;
     margin-left: 20px;
     margin-right: 20px;
-    height: 60vh;
+    height: 55vh;
     /* border-style: dotted; */
     border-color: red;
     border-radius: 20px;
@@ -49,6 +51,7 @@ h2 {
     font-weight: 600;
     margin-left: 20px;
     /* margin-top: 20px; */
+    visibility: hidden;
 }
 
 .card1 {
@@ -58,6 +61,7 @@ h2 {
     margin-right: 20px;
     border-radius: 8px;
     padding: 10px;
+    visibility: hidden;
 }
 
 .card2 {
@@ -67,6 +71,7 @@ h2 {
     margin-right: 20px;
     border-radius: 8px;
     padding: 10px;
+    visibility: hidden;
 }
 
 .card3 {
@@ -76,6 +81,7 @@ h2 {
     margin-right: 20px;
     border-radius: 8px;
     padding: 10px;
+    visibility: hidden;
 }
 
 .card4 {
@@ -85,6 +91,7 @@ h2 {
     margin-right: 20px;
     border-radius: 8px;
     padding: 10px;
+    visibility: hidden;
 }
 
 .card5 {
@@ -97,6 +104,7 @@ h2 {
     padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+    visibility: hidden;
 }
 
 .droid {
@@ -115,4 +123,18 @@ h2 {
 .fa-robot {
     color: white;
     /* transform: translateY(-20%); */
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: translateY(-100%);     */
+    float: right;
+    bottom: 2px;
+    margin-right: 30px;
+    box-shadow: 5px 5px 5px grey;
 }
