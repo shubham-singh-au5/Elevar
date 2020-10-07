@@ -4,46 +4,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Chatbot </title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Test</title>
 </head>
 
 <body>
-    <div class="main">
-        <div class="top">
-            <h2 class="mt-4">IRIS</h2>
-            <h4 class="mt-2">Hello <i class="fa fa-hand-spock-o ml-2"></i> </h3>
-                <p class="mt-3">I am Iris, a Virtual Assistant <br> <span>How may I help you?</span></p>
-        </div>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-primary">
+        <a href="#" class="navbar-brand text-light"> flipkart </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="card">
-            <div class="droid"> <i class='fas fa-robot' style='font-size:36px'></i>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active text-light dropdown-toggle ml-3">File</a>
+                <a href="#" class="nav-item nav-link text-light ml-2"> <i class="fas fa-undo"></i> Undo</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link text-light ml-2" data-toggle="dropdown"> <i class="fa fa-refresh"
+                            aria-hidden="true"></i> reset</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item text-light"> Inbox</a>
+                        <a href="#" class="dropdown-item text-light">Sent</a>
+                        <a href="#" class="dropdown-item text-light">Drafts</a>
+                    </div>
+                </div>
             </div>
-            <p id="card-content" class="">Frequently Asked Questions <i class="fa fa-question ml-1"
-                    style="color:orange"> </i> </p>
-            <div class="card1"> <i class="fa fa-circle mr-2" style="color:orange"></i> Can I redeem my FB before the
-                original term?</div>
-            <div class="card2 mt-2"> <i class="fa fa-circle mr-2" style="color:orange"></i> How do I pay my Credit card
-                bill?</div>
-            <div class="card3 mt-2"> <i class="fa fa-circle mr-2" style="color:orange"> </i> How can I get my Account
-                Statement?</div>
-            <div class="card4 mt-2"> <i class="fa fa-circle mr-2" style="color:orange"></i> What is the tenure of Fixed
-                Deposit?</div>
-            <div class="card5 mt-4"> <i class='far fa-comment-alt mr-2'></i> Start a New Conversation </div>
+
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link text-light mr-3"> <i class="fa fa-share-alt"
+                        aria-hidden="true"></i> Share</a>
+                <a href="#" class="nav-item nav-link text-light mr-3"> <i class="fa fa-download" aria-hidden="true"></i>
+                    Download</a>
+                <a href="#" class="nav-item nav-link text-light dropdown-toggle">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!--/.Navbar -->
+
+    <!-- body -->
+
+    <div class="">
+
+        <div class="row">
+
+            <!-- Left column -->
+            <div class="col-md-2 mt-3 ml-3">
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Search">
+                    </div>
+                </form>
+
+                <div class="row">
+                    <div class="col-md-5 mt-3">
+                        <div class="btn btn-primary btn-lg">
+                            Add
+                        </div>
+                    </div>
+                    <div class="col-md-5 mt-3">
+                        <div class="btn btn-outline-primary btn-lg">
+                            Buy
+                        </div>
+                    </div>
+                </div>
+
+                <div id="colour" class="mt-4">COLOUR</div>
+
+                <div class="row">
+                    <div class="col-md-6 mt-2">
+                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mt-2">
+                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mt-2">
+                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Middle column -->
+            <div class="col-md-7 mt-5">
+                <div>
+                    <div class="container">
+                        <img src="https://s.w-x.co/in-shimla_mountains.jpg" alt="Snow"
+                            style="width:100%; height: 400px;">
+                        <!-- <div class="bottom-left">Bottom Left</div> -->
+                        <!-- <div class="top-left">Top Left</div> -->
+                        <!-- <div class="top-right">Top Right</div> -->
+                        <!-- <div class="bottom-right">Bottom Right</div> -->
+                        <div class="centered">
+                            <h2> Ordering Contact Lens </h2>
+                            <p>Around the world, food born illnesses have become increasingly common.</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="btn btn-outline-primary text-light"> <i class="fa fa-window-close" aria-hidden="true"></i> Cancel</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="btn btn-outline-success text-light"> <i class="fa fa-forward" aria-hidden="true"></i> Make Progress</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ml-5">
+                        <div class="col-md-6 mt-3 text-dark">
+                            <h4>Rosetta Massey</h4>
+                            <p>By <a href=""> Henry Ruiz</a> <span class="ml-5">02 April 2018</span></p>
+                            <p>Even wondered how some graphic desginers ever managed to produce beautiful looking
+                                designs for their brochures</p>
+                        </div>
+                        <div class="col-md-6 mt-3 text-dark">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top ml-5"
+                                    src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="col-md-2 text-dark mt-3">
+                <div id="align">
+                    <p>Alignment</p>
+                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
+                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
+                </div>
+
+                <div id="opacity">
+                    <p class="mt-3">Opacity</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                            aria-valuemax="100" style="width:50%">
+                            50%
+                        </div>
+                    </div>
+                </div>
+
+                <div id="opacity">
+                    <p class="mt-3">Shadows</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                            aria-valuemax="100" style="width:20%">
+                            20%
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="mt-3"> Colour</p>
+                    <div class="card" style="width: 15rem;">
+                        <img id="colorPicker" class="card-img-top mt-2"
+                            src="https://i1.wp.com/rocketium.com/academy/wp-content/uploads/2018/02/2000px-RGB_color_wheel_72.svg_.png?resize=1130%2C1130&ssl=1"
+                            alt="Card image cap">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <div class="icon">
-        <i class='fas fa-comment' style='font-size:38px;color:red'></i>
-    </div>
-
-
-    <script src="./index.js"></script>
 </body>
 
 </html>
