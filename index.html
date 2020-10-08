@@ -42,7 +42,8 @@
                         aria-hidden="true"></i> Share</a>
                 <a href="#" class="nav-item nav-link text-light mr-3"> <i class="fa fa-download" aria-hidden="true"></i>
                     Download</a>
-                <a href="#" class="nav-item nav-link text-light dropdown-toggle"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                <a href="#" class="nav-item nav-link text-light dropdown-toggle"> <i class="fa fa-user"
+                        aria-hidden="true"></i> Login</a>
             </div>
         </div>
     </nav>
@@ -55,7 +56,7 @@
         <div class="row">
 
             <!-- Left column -->
-            <div class="col-md-2 mt-3 ml-5 ">
+            <div id="leftCol" class="col-md-2 mt-3 ml-4">
 
                 <form class="mt-1">
                     <div class="form-group">
@@ -108,12 +109,16 @@
 
             </div>
 
+            <div id="arrowLeft" class="col-md-1">
+                <i class="fa fa-forward" aria-hidden="true"></i>
+            </div>
+
             <!-- <div class="col-md-1" id="arrowIn">
                 <i class='fas fa-angle-double-left' style='font-size:48px;color:burlywood'></i>
             </div> -->
 
             <!-- Middle column -->
-            <div class="col-md-7 mt-1 ml-3">
+            <div class="col-md-5 mt-1">
                 <div>
                     <!-- <div class="container">
                         <img src="https://s.w-x.co/in-shimla_mountains.jpg" alt="Snow"
@@ -210,7 +215,12 @@
             </div>
 
             <!-- Right column -->
-            <div class="col-md-2 text-dark mt-3 ">
+
+            <div id="arrowRight" class="col-md-1">
+                <i class="fa fa-backward" aria-hidden="true"></i>
+            </div>
+
+            <div id="rightCol" class="col-md-2 text-dark mt-3 mr-1">
                 <div id="align">
                     <p>Alignment</p>
                     <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
@@ -271,14 +281,31 @@
 
 
     <script>
-        $('.carousel').carousel({
-            interval: 6000,
-            pause: "false"
+
+        $('#arrowLeft').click(function () {
+            $('#leftCol').slideToggle()
         });
 
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
+        $('#arrowRight').click(function () {
+            $('#rightCol').slideToggle()
+        });
+
+        // $(document).ready(function () {
+        //     $("#arrowLeft").click(function () {
+        //         $("#leftCol").animate({
+        //             width: "toggle"
+        //         });
+        //     });
+        // });
+
+        // $(document).ready(function () {
+        //     $("#arrowRight").click(function () {
+        //         $("#rightCol").animate({
+        //             width: "toggle"
+        //         });
+        //     });
+        // });
+
     </script>
 </body>
 

@@ -165,4 +165,28 @@ rgb(63,41,8),13px 13px 0
   box-shadow: 5px 10px #888888;
 }
 
+#arrowRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: orange;
+}
 
+#arrowLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: orange;
+}
+
+#leftCol {
+  background-color: lightgray;
+  height: 80vh;
+}
+
+#rightCol {
+  background-color: lightgray;
+  height: 80vh; 
+}
