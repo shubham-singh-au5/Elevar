@@ -11,301 +11,357 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <title>Test</title>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Onething Design </title>
+
+    <script>
+        $(document).ready(function () {
+            // Add down arrow icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").find(".fa").addClass("fa-angle-down").removeClass("fa-angle-right");
+            });
+
+            // Toggle right and down arrow icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-angle-right").addClass("fa-angle-down");
+            }).on('hide.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-angle-down").addClass("fa-angle-right");
+            });
+        });
+    </script>
+
 </head>
 
 <body>
-    <!--Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-primary">
-        <a href="#" class="navbar-brand text-light"> flipkart </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link active text-light dropdown-toggle ml-3">File</a>
-                <a href="#" class="nav-item nav-link text-light ml-2"> <i class="fas fa-undo"></i> Undo</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link text-light ml-2" data-toggle="dropdown"> <i class="fa fa-refresh"
-                            aria-hidden="true"></i> reset</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item text-light"> Inbox</a>
-                        <a href="#" class="dropdown-item text-light">Sent</a>
-                        <a href="#" class="dropdown-item text-light">Drafts</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link text-light mr-3"> <i class="fa fa-share-alt"
-                        aria-hidden="true"></i> Share</a>
-                <a href="#" class="nav-item nav-link text-light mr-3"> <i class="fa fa-download" aria-hidden="true"></i>
-                    Download</a>
-                <a href="#" class="nav-item nav-link text-light dropdown-toggle"> <i class="fa fa-user"
-                        aria-hidden="true"></i> Login</a>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="btn ml-5"><a class="navbar-brand text-light" id="logo" href="#">AFC Inc.</a></div>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="#">Link</a> -->
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="btn" style="font-weight: 600;">Track Application</div>
+                <div class="btn" style="font-weight: 600;"> Manage My Card</div>
+                <div class="btn" style="font-weight: 600;">FAQs</div>
+                <div class="btn ml-2" id="getStarted">Get Started</div>
+            </form>
         </div>
     </nav>
-    <!--/.Navbar -->
 
-    <!-- body -->
+    <!-- First Page -->
 
-    <div class="">
+    <div class="container" id="firstPage">
+        <div class="row mt-5 d-none d-sm-block">
 
+        </div>
         <div class="row">
-
-            <!-- Left column -->
-            <div id="leftCol" class="col-md-2 mt-3 ml-4">
-
-                <form class="mt-1">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Search">
-                    </div>
-                </form>
-
-                <div class="row">
-                    <div class="col-md-5 mt-3">
-                        <div class="btn btn-outline-primary btn-lg">
-                            Add
-                        </div>
-                    </div>
-                    <div class="col-md-5 mt-3 ml-4">
-                        <div id="buy" class="btn btn-outline-primary btn-lg">
-                            Buy
-                        </div>
-                    </div>
-                </div>
-
-                <div id="colour" class="mt-3">COLOUR</div>
-
-                <div class="row">
-                    <div class="col-md-6 mt-2">
-                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 mt-2">
-                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 mt-2">
-                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-md-6 mt-2">
-                        <i class="fa fa-columns fa-5x" aria-hidden="true"></i>
-                    </div>
-                </div>
-
+            <div class="col-md-6">
+                <h1 class="mt-5" style="font-weight: 600;">Build a Credit Card That is Definitely Yours</h1>
+                <h4 class="mt-4">With the OneSync Credit Card you can customize your card the way you want</h4>
+                <button class="mt-3" id="btnStarted">Get Started</button>
             </div>
-
-            <div id="arrowLeft" class="col-md-1">
-                <i class="fa fa-forward" aria-hidden="true"></i>
+            <div class="col-md-6">
+                <img class="mt-5 ml-3"
+                    src="https://cdn.hipwallpaper.com/i/50/95/VFDtiP.jpg"
+                    height="325px" width="475px" alt="">
             </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <h1 class="mt-5"></h1>
+        </div>
+    </div>
 
-            <!-- <div class="col-md-1" id="arrowIn">
-                <i class='fas fa-angle-double-left' style='font-size:48px;color:burlywood'></i>
-            </div> -->
+    <!-- Second Page -->
 
-            <!-- Middle column -->
-            <div class="col-md-5 mt-1">
-                <div>
-                    <!-- <div class="container">
-                        <img src="https://s.w-x.co/in-shimla_mountains.jpg" alt="Snow"
-                            style="width:100%; height: 400px;">
-
-                        <div class="centered">
-                            <h2> Ordering Contact Lens </h2>
-                            <p>Around the world, food born illnesses have become increasingly common.</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="btn btn-outline-primary text-light"> <i class="fa fa-window-close"
-                                            aria-hidden="true"></i> Cancel</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="btn btn-outline-success text-light"> <i class="fa fa-forward"
-                                            aria-hidden="true"></i> Make Progress</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="https://s.w-x.co/in-shimla_mountains.jpg"
-                                    data-color="lightblue" alt="First Image" style="width:100%; height: 400px;">
-                                <div class="carousel-caption d-md-block">
-                                    <h2> Ordering Contact Lens </h2>
-                                    <p>Around the world, food born illnesses have become increasingly common.</p>
-                                    <div class="btn btn-outline-primary text-light"> <i class="fa fa-window-close"
-                                            aria-hidden="true"></i> Cancel</div>
-                                    <div class="btn btn-outline-success text-light"> <i class="fa fa-forward"
-                                            aria-hidden="true"></i> Make Progress</div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100"
-                                    src="https://images.unsplash.com/photo-1504736038806-94bd1115084e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=3d045bbf1ecc01c4c9ec011ce5c8977d"
-                                    data-color="firebrick" alt="Second Image" style="width:100%; height: 400px;">
-                                <div class="carousel-caption d-md-block">
-                                    <h5>Second Image</h5>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100"
-                                    src="https://images.unsplash.com/photo-1419064642531-e575728395f2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=76d5c793e4f8d02d7a9be27bc71256f7"
-                                    data-color="violet" alt="Third Image" style="width:100%; height: 400px;">
-                                <div class="carousel-caption d-md-block">
-                                    <h5>Third Image</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Controls -->
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-md-6 mt-3 text-dark">
-                            <h4 style="text-shadow: rgb(40, 216, 187) 1px 0 10px;">Rosetta Massey</h4>
-                            <p>By <a href=""> Henry Ruiz</a> <span class="ml-5">02 April 2018</span></p>
-                            <p>Even wondered how some graphic desginers ever managed to produce beautiful looking
-                                designs for their brochures</p>
-                        </div>
-                        <div class="col-md-6 mt-3 text-dark">
-                            <div class="card ml-5" style="width: 18rem; float: right;">
-                                <img class="card-img-top"
-                                    src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class=" mt-5" id="secondPage">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6 mt-5">
+                    <h3 class="mt-3 ml-5" style="color: aliceblue; font-weight: 600;">The Freedom to Create the Credit
+                        Card
+                        You Want</h3>
                 </div>
-
-
+                <div class="col-md-6 mt-5 mb-5">
+                    <p style="color: aliceblue;" class="mt-3">That's why it comes with benefits and rewards chosen by
+                        you.
+                        Available in multiple designs, your card comes in a style selected by you. You can come back
+                        each
+                        year to edit your benefits or update your style. <br> <br> Your OneSync Credit Card stays true
+                        to
+                        you, year after year. It's the only card you'll ever need. <br> <br>
+                        <u>Get Started</u> <i class="fa fa-forward ml-2" aria-hidden="true"></i></p>
+                </div>
             </div>
-
-            <!-- Right column -->
-
-            <div id="arrowRight" class="col-md-1">
-                <i class="fa fa-backward" aria-hidden="true"></i>
-            </div>
-
-            <div id="rightCol" class="col-md-2 text-dark mt-3 mr-1">
-                <div id="align">
-                    <p>Alignment</p>
-                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
-                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
-                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
-                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
-                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
-                    <i class="fa fa-align-center ml-2" aria-hidden="true"></i>
-                </div>
-
-                <div id="opacity">
-                    <p class="mt-3">Opacity</p>
-                    <!-- <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                            aria-valuemax="100" style="width:50%">
-                            50%
-                        </div>
-                    </div> -->
-                    <label for="customRange1">Example range</label>
-                    <input type="range" class="custom-range" id="customRange1">
-                </div>
-
-                <div id="opacity">
-                    <p class="mt-3">Shadows</p>
-                    <!-- <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0"
-                            aria-valuemax="100" style="width:20%">
-                            20%
-                        </div>
-                    </div> -->
-                    <!-- <label for="customRange1">Example range</label> -->
-                    <input type="range" class="custom-range" id="customRange1">
-                </div>
-
-                <div>
-                    <p class="mt-3"> Colour</p>
-                    <!-- <div class="card" style="width: 15rem;">
-                        <img id="colorPicker" class="card-img-top mt-2"
-                            src="https://i1.wp.com/rocketium.com/academy/wp-content/uploads/2018/02/2000px-RGB_color_wheel_72.svg_.png?resize=1130%2C1130&ssl=1"
-                            alt="Card image cap">
-                        <div class="card-body">
-                        </div>
-                    </div> -->
-                    <form action="/action_page.php">
-                        <label for="favcolor">Select your favorite color:</label>
-                        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
-                        <!-- <input type="submit"> -->
-                    </form>
-                </div>
-
-
+            <div class="row mt-5">
 
             </div>
         </div>
     </div>
 
+    <!-- Third Page -->
+
+    <div class="">
+        <div class="row">
+            <div class="col-md-1" id="inputForms">
+
+            </div>
+            <div class="col-md-5" id="inputForms">
+                <div class="row mt-5"></div>
+                <input id="inputForm" class="form-control w-50 mt-5 ml-5" placeholder="Enter your phone number"
+                    type="text">
+                <input id="inputForm" class="form-control w-50 mt-5 ml-5" placeholder="Enter your PAN number"
+                    type="text">
+                <input id="inputForm" class="form-control w-50 mt-5 mb-5 ml-5" placeholder="Enter your address"
+                    type="text">
+                <div class="row mt-5 mb-5"></div>
+            </div>
+
+            <div class="col-md-6 mt-5">
+                <div class="row mt-5"></div>
+                <i class="fa fa-file ml-5 mt-3" style="font-size:36px; color: skyblue;"></i>
+                <h2 class="ml-5 mt-4" style="font-weight: 600;">Fill Eligibility Form</h2>
+                <h5 class="mt-4 ml-5">Tell us about yourself, to find out if you're eligible to apply</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth Page -->
+
+    <div class="" id="fourthPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5 mb-5">
+                    <div class="row mt-5"></div>
+                    <i class='fas fa-network-wired ml-5' style='font-size:36px;color:orange'></i>
+                    <h2 style="font-weight: 600;" class="ml-5 mt-5">Choose Your Rewards</h2>
+                    <p class="mt-4 ml-5">Match your card to your lifestyle. We've got benefits from across brands and
+                        categories for you to choose from. Each benefit has an attached fee. Just add the ones you like
+                        to
+                        your card</p>
+                    <div class="row mb-5"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row mt-5"></div>
+                    <div class="slideshow-container ml-4 mt-5">
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="https://qph.fs.quoracdn.net/main-qimg-55b2daca9f36ddb7b8371fdb9626ed50"
+                                style="width:100%; height: 350px;">
+                            <div class="text"></div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="https://static.twentyoverten.com/5a71f13677cd370ac59f30e3/gmaupx_f1MI/bigstock-190748707.jpg"
+                                style="width:100%; height: 350px;">
+                            <div class="text"></div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="https://moneycheck-9fcd.kxcdn.com/wp-content/uploads/2018/11/reward-credit-cards-1.jpg"
+                                style="width:100%; height: 350px;">
+                            <div class="text"></div>
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fifth Page -->
+
+    <div class="">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="slideshow" class="mt-5 ml-3">
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <img src="https://techcrunch.com/wp-content/uploads/2020/08/Card-Solo.png?w=730&crop=1" style="width: 100%;" class="slide-number" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.discover.com/content/dam/discover/en_us/credit-cards/card-acquisitions/student/images/product/3D%20Student%20Copy%204.png" style="width: 100%;" class="slide-number" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://image.cnbcfm.com/api/v1/image/106660564-1597250463719-unicorncard.jpg?v=1597250781&w=600&h=400" class="slide-number" style="width: 100%;" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Credit-cards.jpg/1200px-Credit-cards.jpg" class="slide-number" style="width: 100%;" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Credit-cards.jpg/1200px-Credit-cards.jpg" class="slide-number" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <i class="fa fa-paint-brush mt-5 ml-5" style="font-size:36px; color: violet;" aria-hidden="true"></i>
+                <h2 class="mt-4 ml-5" style="font-weight: 600;">Select Your Style</h2>
+                <h4 class="mt-4 ml-5">Match your card to your personality. Whether you like a minimal look or something
+                    that catches everyone's eyes, we've got a style for you. You can update your style every year for a
+                    small fee.</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sixth Page -->
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col">
+                <div id="accordion">
+                    <h2 class="mt-5" style="text-align: center; font-weight: 600;">FAQs</h2>
+
+                    <div class="bs-example mt-4">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 id="H2" class="mb-0">
+                                        <button id="accordionButton" type="button" class="btn btn-link"
+                                            data-toggle="collapse" data-target="#collapseOne"><i
+                                                class="fa fa-angle-right mr-3"></i> Who's
+                                            eligible for the card?</button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>If you're between 23-60 years of age, have a monthly income of 25,000 or
+                                            more, and have never defaulted on a credit card or loan payment, we'd
+                                            encourage you to apply. However, your application will be denied if your
+                                            location isn't servicable or if your credit score is low.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button type="button" id="accordionButton" class="btn btn-link collapsed"
+                                            data-toggle="collapse" data-target="#collapseTwo"><i
+                                                class="fa fa-angle-down mr-3"></i> Is my
+                                            location servicable?</button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>If you're between 23-60 years of age, have a monthly income of 25,000 or
+                                            more, and have never defaulted on a credit card or loan payment, we'd
+                                            encourage you to apply. However, your application will be denied if your
+                                            location isn't servicable or if your credit score is low.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button type="button" id="accordionButton" class="btn btn-link collapsed"
+                                            data-toggle="collapse" data-target="#collapseThree"><i
+                                                class="fa fa-angle-right mr-3"></i> What if
+                                            I don't want to pay at all?</button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>If you're between 23-60 years of age, have a monthly income of 25,000 or
+                                            more, and have never defaulted on a credit card or loan payment, we'd
+                                            encourage you to apply. However, your application will be denied if your
+                                            location isn't servicable or if your credit score is low.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seventh Page -->
+
+    <div class="" id="seventhPage">
+        <div class="row">
+            <div class="col" style="text-align: center; color: white;">
+                <h3 class="mt-5" style="font-weight: 600;">OneSync Credit Card</h3>
+                <h5>Experience Freedom</h5>
+                <button id="lastButton" class="mt-5">Get Started</button>
+                <hr class="mt-5">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-4" style="color: white;">
+                <div class="col-md-3 mb-5">
+                    <p>Manage Your Card</p>
+                    <p>Track Your Application</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Manage Your Card</p>
+                    <p>Track Your Application</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Manage Your Card</p>
+                    <p>Track Your Application</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Manage Your Card</p>
+                    <p>Track Your Application</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5"></div>
 
     <script>
+        var slideIndex = 0;
+        showSlides();
 
-        $('#arrowLeft').click(function () {
-            $('#leftCol').slideToggle()
-        });
-
-        $('#arrowRight').click(function () {
-            $('#rightCol').slideToggle()
-        });
-
-        // $(document).ready(function () {
-        //     $("#arrowLeft").click(function () {
-        //         $("#leftCol").animate({
-        //             width: "toggle"
-        //         });
-        //     });
-        // });
-
-        // $(document).ready(function () {
-        //     $("#arrowRight").click(function () {
-        //         $("#rightCol").animate({
-        //             width: "toggle"
-        //         });
-        //     });
-        // });
-
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
     </script>
 </body>
 
