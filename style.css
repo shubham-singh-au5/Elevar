@@ -212,3 +212,7 @@ img {vertical-align: middle;}
   80% {margin-left: -2184px;}
   90% {margin-left: -2184px;}
 }
+
+.slide {
+  align-items: center;
+}
