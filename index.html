@@ -12,365 +12,366 @@
     <link rel="stylesheet" href="./style.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Onething Design </title>
 
-    <script>
-        $(document).ready(function () {
-            // Add down arrow icon for collapse element which is open by default
-            $(".collapse.show").each(function () {
-                $(this).prev(".card-header").find(".fa").addClass("fa-angle-down").removeClass("fa-angle-right");
-            });
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title> Elevar Sports </title>
 
-            // Toggle right and down arrow icon on show hide of collapse element
-            $(".collapse").on('show.bs.collapse', function () {
-                $(this).prev(".card-header").find(".fa").removeClass("fa-angle-right").addClass("fa-angle-down");
-            }).on('hide.bs.collapse', function () {
-                $(this).prev(".card-header").find(".fa").removeClass("fa-angle-down").addClass("fa-angle-right");
-            });
-        });
+    <script src="./index.js">
+        
     </script>
 
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <div class="btn ml-5"><a class="navbar-brand text-light" id="logo" href="#">AFC Inc.</a></div>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
-                </li>
-                <li class="nav-item">
-                    <!-- <a class="nav-link" href="#">Link</a> -->
-                </li>
-                <li class="nav-item">
-                    <!-- <a class="nav-link disabled" href="#">Disabled</a> -->
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <div class="btn" style="font-weight: 600;">Track Application</div>
-                <div class="btn" style="font-weight: 600;"> Manage My Card</div>
-                <div class="btn" style="font-weight: 600;">FAQs</div>
-                <div class="btn ml-2" id="getStarted">Get Started</div>
-            </form>
-        </div>
-    </nav>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand " href="#">ELEVAR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- First Page -->
-
-    <div class="container" id="firstPage" >
-        <div class="row mt-5 d-none d-sm-block">
-
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h1 class="mt-5" style="font-weight: 600;">Build a Credit Card That is Definitely Yours</h1>
-                <h4 class="mt-4">With the OneSync Credit Card you can customize your card the way you want</h4>
-                <button class="mt-3" id="btnStarted">Get Started</button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold" href="#">About Us <span class="sr-only"> </span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Technology
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Shoe Technology</a>
+                            <a class="dropdown-item" href="#">Bat Technology</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Shoes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">THE ARC RACER</a>
+                            <a class="dropdown-item" href="#">The Insane Truth</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Shoe Technology</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Bats
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Elevar Bats</a>
+                            <a class="dropdown-item" href="#">Elevar Custom Bats</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Elevar Kashmir</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a style="font-weight: 600;" class="nav-link font-weight-bold" href="#">Products <span
+                                class="sr-only"> </span></a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-6">
-                <img class="mt-5 ml-1" src="https://cdn.hipwallpaper.com/i/50/95/VFDtiP.jpg" height="325px"
-                    width="475px" alt="">
-            </div>
-        </div>
-        <div class="row mt-5 mb-5">
-            <h1 class="mt-5"></h1>
-        </div>
+        </nav>
     </div>
 
-    <!-- Second Page -->
 
-    <div class=" mt-5" id="secondPage" >
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-md-6 mt-5">
-                    <h3 class="mt-3 ml-5" style="color: aliceblue; font-weight: 600;">The Freedom to Create the Credit
-                        Card
-                        You Want</h3>
-                </div>
-                <div class="col-md-6 mt-5 mb-5">
-                    <p style="color: aliceblue;" class="mt-3">That's why it comes with benefits and rewards chosen by
-                        you.
-                        Available in multiple designs, your card comes in a style selected by you. You can come back
-                        each
-                        year to edit your benefits or update your style. <br> <br> Your OneSync Credit Card stays true
-                        to
-                        you, year after year. It's the only card you'll ever need. <br> <br>
-                        <u>Get Started</u> <i class="fa fa-forward ml-2" aria-hidden="true"></i></p>
-                </div>
-            </div>
-            <div class="row mt-5">
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Third Page -->
-
-    <div class="">
-        <div class="row" style="height: 150%;">
-            <!-- <div class="col-md-1" id="inputForms">
-
-            </div> -->
-            <div class="col-md-6" id="inputForms">
-                <div class="row mt-5"></div>
-                <div class="container ml-5 mt-5">
-                    <input id="inputForm" class="form-control w-50 mt-5 ml-5" placeholder="Enter your phone number"
-                        type="text">
-                    <input id="inputForm" class="form-control w-50 mt-5 ml-5" placeholder="Enter your PAN number"
-                        type="text">
-                    <input id="inputForm" class="form-control w-50 mt-5 mb-5 ml-5" placeholder="Enter your address"
-                        type="text">
-                </div>
-                <!-- <div class="row mt-5 mb-5"></div> -->
-            </div>
-
-            <div class="col-md-6 mt-5 mb-5">
-                <div class="row mt-5"></div>
-                <i class="fa fa-file ml-5 mt-3" style="font-size:36px; color: skyblue;"></i>
-                <h2 class="ml-5 mt-4" style="font-weight: 600;">Fill Eligibility Form</h2>
-                <h5 class="mt-4 ml-5">Tell us about yourself, to find out if you're eligible to apply</h5>
-            </div>
-        </div>
-    </div>
-
-    <!-- Fourth Page -->
-
-    <div class="" id="fourthPage" style="height: 100%;">
-        <div class="container">
+    <section class="container">
+        <div class="container-fluid" style="margin-top: 0px;">
             <div class="row">
-                <div class="col-md-6 mt-5 mb-5">
-                    <!-- <div class="row mt-5"></div> -->
-                    <i class='fas fa-network-wired ml-5 mt-5' style='font-size:36px;color:orange'></i>
-                    <h2 style="font-weight: 600;" class="ml-5 mt-5">Choose Your Rewards</h2>
-                    <p class="mt-4 ml-5">Match your card to your lifestyle. We've got benefits from across brands and
-                        categories for you to choose from. Each benefit has an attached fee. Just add the ones you like
-                        to
-                        your card</p>
-                    <div class="row mb-5"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row mt-5"></div>
-                    <div class="slideshow-container ml-4 mt-5">
+                <div class="col-sm-6">
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">1 / 3</div>
-                            <img src="https://qph.fs.quoracdn.net/main-qimg-55b2daca9f36ddb7b8371fdb9626ed50"
-                                style="width:100%; height: 30%;">
-                            <div class="text"></div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <div class="numbertext">2 / 3</div>
-                            <img src="https://static.twentyoverten.com/5a71f13677cd370ac59f30e3/gmaupx_f1MI/bigstock-190748707.jpg"
-                                style="width:100%; height: 30%;">
-                            <div class="text"></div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <div class="numbertext">3 / 3</div>
-                            <img src="https://moneycheck-9fcd.kxcdn.com/wp-content/uploads/2018/11/reward-credit-cards-1.jpg"
-                                style="width:100%; height: 30%;">
-                            <div class="text"></div>
-                        </div>
-
-                    </div>
-                    <br>
-
-                    <div style="text-align:center">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Fifth Page -->
-
-    <div class="">
-        <div class="row">
-            <div class="col-md-6">
-                <div id="slideshow" class="mt-5 ml-3">
-                    <div class="container">
-                        <div class="slide-wrapper">
-                            <div class="slide">
-                                <img src="https://techcrunch.com/wp-content/uploads/2020/08/Card-Solo.png?w=730&crop=1"
-                                    style="width: 70%;" class="slide-number" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.discover.com/content/dam/discover/en_us/credit-cards/card-acquisitions/student/images/product/3D%20Student%20Copy%204.png"
-                                    style="width: 60%;" class="slide-number" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="https://image.cnbcfm.com/api/v1/image/106660564-1597250463719-unicorncard.jpg?v=1597250781&w=600&h=400"
-                                    class="slide-number" style="width: 70%;" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Credit-cards.jpg/1200px-Credit-cards.jpg"
-                                    class="slide-number" style="width: 65%;" alt="">
-                            </div>
-                            <!-- <div class="slide">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Credit-cards.jpg/1200px-Credit-cards.jpg"
-                                    class="slide-number" alt="">
-                            </div> -->
+                    <div class="w">
+                        <div class="ts">
+                            <input type="radio" id="c1" name="ts" checked="checked" />
+                            <label class="t" for="c1"><img
+                                    src="https://cdn.shopify.com/s/files/1/0017/4227/4613/products/SW50596_768x.png?v=1584189741" /></label>
+                            <input type="radio" id="c2" name="ts" />
+                            <label class="t" for="c2"><img
+                                    src="https://cdn.shopify.com/s/files/1/0017/4227/4613/products/SW50727_400x.png?v=1584289734" /></label>
+                            <input type="radio" id="c3" name="ts" />
+                            <label class="t" for="c3"><img
+                                    src="https://cdn.shopify.com/s/files/1/0017/4227/4613/products/SW50732_400x.png?v=1584289734" /></label>
+                            <input type="radio" id="c4" name="ts" />
+                            <label class="t" for="c4"><img
+                                    src="https://cdn.shopify.com/s/files/1/0017/4227/4613/products/SW50684_400x.png?v=1584289734" /></label>
+                            <input type="radio" id="c5" name="ts" />
+                            <label class="t" for="c5"><img
+                                    src="https://cdn.shopify.com/s/files/1/0017/4227/4613/products/SW50789_400x.png?v=1584289734" /></label>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 mt-3">
-                <i class="fa fa-paint-brush mt-5 ml-5" style="font-size:36px; color: violet;" aria-hidden="true"></i>
-                <h2 class="mt-4 ml-5" style="font-weight: 600;">Select Your Style</h2>
-                <h4 class="mt-4 ml-5">Match your card to your personality. Whether you like a minimal look or something
-                    that catches everyone's eyes, we've got a style for you. You can update your style every year for a
-                    small fee.</h4>
-            </div>
-        </div>
-    </div>
 
-    <!-- Sixth Page -->
+                <!-- Product Description -->
+                <div class="col-sm-6 desc" style="margin-top: 30px;">
 
-    <div class="container mt-5 mb-5" style="height: 500px;">
-        <div class="row">
-            <div class="col">
-                <div id="accordion">
-                    <h2 class="mt-5" style="text-align: center; font-weight: 600;">FAQs</h2>
+                    <div>
 
-                    <div class="bs-example mt-4">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 id="H2" class="mb-0">
-                                        <button id="accordionButton" type="button" class="btn btn-link"
-                                            data-toggle="collapse" data-target="#collapseOne"><i
-                                                class="fa fa-angle-right mr-3"></i> Who's
-                                            eligible for the card?</button>
-                                    </h2>
+                        <p class="font-weight-light">Our Flagship Sneaker</p>
+                        <h3 style=" margin-top: 0%; font-weight: 750;"> ELEVAR ARC RACER</h3>
+
+                        <div style="margin-top: 10px;">
+                            <p class="font-weight-light">Limited Time Early Bird Discount: Get Rs 1000 Off</p>
+                            <h5 style="margin-top: 0px;"><del>INR 5,990</del> <span
+                                    style="color: blue; font-weight: 600;">INR 4,990</span></h5>
+                            <!-- <br> -->
+                            <h5 style="margin-top: 20px;">A high-performance shoe engineered specifically to adapt to
+                                your needs.</h5>
+                            <h5 style="margin-top: 20px;"> <span style="font-weight: 600;">Choose color:</span> <span
+                                    style="color: blue; font-weight: 600;">Fiery Red</span> </h5>
+                            <div class="row text-center">
+
+                                <!--Grid column-->
+                                <div class="col-md-2 mb-4">
+
+                                    <img id="img1" style="max-width: 10vh; border-color: black;"
+                                        class="rounded-circle border border-dark" alt="100x100"
+                                        src="https://img.mensxp.com/media/shop/catalog/products/E/718776/elevar-arc-racer-fiery-red-sports-shoes-290621-default.jpg"
+                                        data-holder-rendered="true">
+
                                 </div>
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p>If you're between 23-60 years of age, have a monthly income of 25,000 or
-                                            more, and have never defaulted on a credit card or loan payment, we'd
-                                            encourage you to apply. However, your application will be denied if your
-                                            location isn't servicable or if your credit score is low.</p>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-2 mb-4">
+
+                                    <img id="img" style="max-width: 10vh;" class="rounded-circle z-depth-2"
+                                        alt="100x100"
+                                        src="https://images-na.ssl-images-amazon.com/images/I/61utX8kBDlL._UY575_.jpg"
+                                        data-holder-rendered="true">
+
+                                </div>
+
+                                <div class="col-md-2 mb-4">
+
+                                    <img id="img" style="max-width: 10vh;" class="rounded-circle z-depth-2"
+                                        alt="100x100"
+                                        src="https://contents.mediadecathlon.com/p1419921/72b461620e3e5ec61db942355362dd66/p1419921.jpg"
+                                        data-holder-rendered="true">
+
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+
+                        </div>
+
+                        <div class="row" style="margin-top: 5px;">
+
+                            <div class="col-sm-6">
+                                <h5 style="font-weight: 600;">Choose Size (UK):</h5>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <strong> <a href="" data-toggle="modal" data-target="#exampleModal"> Size Guide</a>
+                                </strong>
+                            </div>
+
+                        </div>
+
+                        <div class="row" style=" margin-top: 20px;">
+                            <div class="col">
+                                This <span style="font-weight: 600;">UK Size 9</span> is equivalent to <span
+                                    style="font-weight: 600;">US 10</span> or <span style="font-weight: 600;">EU
+                                    44</span>
+                            </div>
+                        </div>
+
+                        <div class=" mt-3 btn-group btn-group-lg special" role="group" aria-label="Basic example">
+                            <button type="button" class="btn border border-dark"> 6</button>
+                            <button type="button" class="btn border border-dark"> 7</button>
+                            <button type="button" class="btn border border-dark"> 8</button>
+                            <button type="button" class="btn border border-dark"> 9</button>
+                            <button type="button" class="btn border border-dark"> 10</button>
+                        </div>
+
+                        <div class="mt-3">
+                            <button type="button" class="btn btn-primary btn-lg btn-block font-weight-bold">ADD TO
+                                CART</button>
+                        </div>
+                        <p class="mt-3"><u>Check If We Deliver To Your Pincode</u></p>
+
+                        <!-- Modal -->
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                        <h2 class="modal-title font-weight-bold mx-auto" id="exampleModalLabel">FIND
+                                            YOUR SIZE
+                                        </h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-md-5 ml-2">
+                                            <h4 class="ml-2" style="font-weight: 600;">Men's Sizes</h4>
+                                        </div>
+                                        <div class="col-md-5 ml-2">
+                                            <div class="btn-toolbar justify-content-between float-lg-right"
+                                                role="toolbar" aria-label="Toolbar with button groups">
+                                                <div class="btn-group" role="group" aria-label="First group">
+                                                    <button type="button" class="btn btn-primary ">CM</button>
+                                                    <button type="button" class="btn btn-primary ">IN</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="modal-body">
+                                            <table class="table">
+                                                <thead class="thead-dark">
+                                                    <tr>
+                                                        <th scope="col">UK Size</th>
+                                                        <th scope="col">US Size</th>
+                                                        <th scope="col">Foot Length</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">6</th>
+                                                        <td>7</td>
+                                                        <td>25 cm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">7</th>
+                                                        <td>8</td>
+                                                        <td>26 cm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">8</th>
+                                                        <td>9</td>
+                                                        <td>27 cm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">9</th>
+                                                        <td>10</td>
+                                                        <td>28 cm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">10</th>
+                                                        <td>11</td>
+                                                        <td>29 cm</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <h3 class="mt-4 ml-4">Still Unsure About Your Size?</h3>
+                                        <p class="mt-3 ml-4"><a href=""> Take a quick survey</a> or <a href=""> measure
+                                                your feet </a></p>
+
+                                        <hr>
+                                        <hr style="color: black;">
+
+                                        <h3 class="mt-4 ml-4">Take A Quick Survey</h3>
+                                        <p class="mt-3"> Have You Ever Worn A Pair From Any Of These Brands? </p>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline1"
+                                                        name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label"
+                                                        for="customRadioInline1">Nike</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline1"
+                                                        name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label"
+                                                        for="customRadioInline1">Puma</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline1"
+                                                        name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label"
+                                                        for="customRadioInline1">Adidas</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline1"
+                                                        name="customRadioInline1" class="custom-control-input">
+                                                    <label class="custom-control-label"
+                                                        for="customRadioInline1">Reebok</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p class="ml-3 mt-5">Select Your Size</p>
+
+                                    <div class="dropdown ml-3 mt-1">
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                            What Size Do You Wear?
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">UK 6/ US 7</a>
+                                            <a class="dropdown-item" href="#">UK 7/ US 8</a>
+                                            <a class="dropdown-item" href="#">UK 8/ US 3</a>
+                                            <a class="dropdown-item" href="#">UK 9/ US 10</a>
+                                            <a class="dropdown-item" href="#">UK 10/ US 11</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button type="button" id="accordionButton" class="btn btn-link collapsed"
-                                            data-toggle="collapse" data-target="#collapseTwo"><i
-                                                class="fa fa-angle-down mr-3"></i> Is my
-                                            location servicable?</button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p>If you're between 23-60 years of age, have a monthly income of 25,000 or
-                                            more, and have never defaulted on a credit card or loan payment, we'd
-                                            encourage you to apply. However, your application will be denied if your
-                                            location isn't servicable or if your credit score is low.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button type="button" id="accordionButton" class="btn btn-link collapsed"
-                                            data-toggle="collapse" data-target="#collapseThree"><i
-                                                class="fa fa-angle-right mr-3"></i> What if
-                                            I don't want to pay at all?</button>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p>If you're between 23-60 years of age, have a monthly income of 25,000 or
-                                            more, and have never defaulted on a credit card or loan payment, we'd
-                                            encourage you to apply. However, your application will be denied if your
-                                            location isn't servicable or if your credit score is low.</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                    </div>
 
+                        <br><br> <br><br><br>
 
-                </div>
-            </div>
-        </div>
-    </div>
+                        <script>
+                            const els = document.querySelectorAll("[type='radio']");
+                            for (const el of els)
+                                el.addEventListener("input", e => reorder(e.target, els));
+                            reorder(els[0], els);
 
-    <!-- Seventh Page -->
+                            function reorder(targetEl, els) {
+                                const nItems = els.length;
+                                let processedUncheck = 0;
+                                for (const el of els) {
+                                    const containerEl = el.nextElementSibling;
+                                    if (el === targetEl) {//checked radio
+                                        containerEl.style.setProperty("--w", "100%");
+                                        containerEl.style.setProperty("--l", "0");
+                                    }
+                                    else {//unchecked radios
+                                        containerEl.style.setProperty("--w", `${100 / (nItems - 1)}%`);
+                                        containerEl.style.setProperty("--l", `${processedUncheck * 100 / (nItems - 1)}%`);
+                                        processedUncheck += 1;
+                                    }
+                                }
+                            }
+                        </script>
 
-    <div class="" id="seventhPage">
-        <div class="row">
-            <div class="col" style="text-align: center; color: white;">
-                <h3 class="mt-5" style="font-weight: 600;">OneSync Credit Card</h3>
-                <h5>Experience Freedom</h5>
-                <button id="lastButton" class="mt-5">Get Started</button>
-                <hr class="mt-5">
-            </div>
-        </div>
-        <div class="container">
-            <div class="row mt-4" style="color: white;">
-                <div class="col-md-3 mb-5">
-                    <p>Manage Your Card</p>
-                    <p>Track Your Application</p>
-                    <p>Contact Us</p>
-                </div>
-                <div class="col-md-3">
-                    <p>Manage Your Card</p>
-                    <p>Track Your Application</p>
-                    <p>Contact Us</p>
-                </div>
-                <div class="col-md-3">
-                    <p>Manage Your Card</p>
-                    <p>Track Your Application</p>
-                    <p>Contact Us</p>
-                </div>
-                <div class="col-md-3">
-                    <p>Manage Your Card</p>
-                    <p>Track Your Application</p>
-                    <p>Contact Us</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mb-5"></div>
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
 </body>
 
 </html>
